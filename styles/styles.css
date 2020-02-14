@@ -239,6 +239,136 @@ li {
   list-style: none;
 }
 
+h1,
+h2,
+p,
+main,
+div,
+img,
+section,
+ul,
+li,
+body
+button {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  display: block;
+}
+
 body {
-  background-color: #738290;
+  font-size: 62.5%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4.0rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h1,
+h2,
+button {
+  font-family: "Staatliches", cursive;
+}
+
+p,
+button {
+  font-size: 1.3rem;
+}
+
+p {
+  letter-spacing: 0.05rem;
+}
+
+button {
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+}
+
+button {
+  padding: 1% 4% !important;
+  background-color: #e59f71;
+  color: #faf8f0;
+}
+
+body {
+  background-color: #a1b5d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ecdbc5;
+  border: solid 10px #e59f71;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 6% 10%;
+}
+
+.questionPage {
+  width: 100%;
+}
+
+.questionPage ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.questionPage li {
+  width: 100%;
+  text-align: center;
+}
+
+h2,
+p {
+  text-align: center;
 }

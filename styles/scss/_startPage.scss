@@ -1,4 +1,25 @@
 body {
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+
+.wrapper {
+    @include wrapper;
+    background-color: $offWhite;
+    border: solid 10px $accentColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 6% 10%;
+}

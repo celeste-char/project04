@@ -11,3 +11,22 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 li {
     list-style: none;
 }
+
+h1,
+h2,
+p,
+main,
+div,
+img,
+section, 
+ul,
+li,
+body
+button {
+    margin: 0;
+    padding: 0;
+}
+button {
+    border: none;
+    display: block;
+}
