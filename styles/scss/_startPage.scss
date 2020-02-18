@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    min-height: 620px;
+    min-height: 700px;
 }
 
 section {
@@ -13,6 +13,11 @@ section {
     align-items: center;
     height: 80%;
     position: relative;
+    margin: 6% 7.5%;
+    padding: 3% 0;
+    background-color: $offWhite;
+    border: solid 10px $accentColor;
+    max-width: 90%;
 }
 
 .wrapper {
@@ -25,35 +30,53 @@ section {
 
 
 .startPage {
-    margin: 6% 10%;
-    padding: 3% 0;
-    background-color: $offWhite;
-    border: solid 10px $accentColor;
+
+    text-align: center;
+
     main {
         display: flex;
         flex-direction: column;
-        height: 70%;
+        min-height: 90%;
+        max-width: 100%;
+        .wrapper {
+            height: unset;
+        }
     }
 
-    ul.galleryContainer {
-        max-height: 60%;
+    .galleryContainer {
+        max-height: 50%;
+        min-height: 50%;
         display: flex;
         background-color: $darkGrey;
         margin: 2% 0;
         align-items: flex-end;
         padding-bottom: 2%;
-
+        position: relative;
+        overflow: hidden;
     }
 
-    li {
+    .imgContainer {
         display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
         height: 100%;
+        width: 275%;
+        left: 0;
+        transform: translate3d(0,0,0);
+        background-image: url(../assets/dogs.png);
+        background-size: cover;
+        animation: slideshow 25s linear infinite;
     }
-    li.chihuahua {
-        height: 50%;
+
+    @keyframes slideshow {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-61.75%); }
     }
 
     img {
         object-fit: contain;
+        object-position: center;
+        height: 100%;
     }
 } 
