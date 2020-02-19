@@ -12,11 +12,21 @@
 
 //VARIBLES
 
-const $resultImg = $('.resultsPage img')
+const $resultImg = $('.resultsPage img');
 
+const $startPage = $('.startPage');
 
+const $questionPage = $('.questionPage');
 
+const $questionText = $('.questionContainer p');
 
+const $answerContainer = $('.answerContainer');
+
+const $selectedInput = $('input[type=radio]:checked')
+
+const $input = $('input')
+
+// const $firstAnswer = $('.answerContainer p:first-child');
 
 //create app namespace to hold all methods
 const dogApp = {};
@@ -26,7 +36,73 @@ const dogApp = {};
 //collect user input "answer" in an array.
 
 //on click of button, check if array contains answers required for each dog
+let questionOneAnswer;
+    
+$('button').on('click', (e) => {
+    e.preventDefault();
+    
 
+    if ($questionText.hasClass('startPage')) { 
+        //start
+        $questionText.removeClass('startPage');
+        $startPage.hide();
+        $questionPage.show();
+        $questionText.addClass('question1');
+        $questionText.show();
+        console.log(questionOneAnswer)
+    } else if ($questionText.hasClass('question1 true')) {
+        //question1
+        $answerContainer.first().children().html(`test1`);
+        $answerContainer.last().children().html(`test2`);
+        $questionText.removeClass('question1');
+        $questionText.addClass('question2');
+    } else if ($questionText.hasClass('question1 false')) {
+        $answerContainer.first().children().html(`test3`);
+        $answerContainer.last().children().html(`test4`);
+        $questionText.removeClass('question1');
+        $questionText.addClass('question3');
+    } else if ($questionText.hasClass('question2 true')) {
+        $answerContainer.first().children().html(`test5`);
+        $answerContainer.last().children().html(`test6`);
+        $questionText.removeClass('question2');
+        $questionText.addClass('question4');
+    } else if ($questionText.hasClass('question2 false')) {
+        $answerContainer.first().children().html(`test7`);
+        $answerContainer.last().children().html(`test8`);
+        $questionText.removeClass('question2');
+        $questionText.addClass('question5');
+    } else if ($questionText.hasClass('question3 true')) {
+        $answerContainer.first().children().html(`test7`);
+        $answerContainer.last().children().html(`test8`);
+        $questionText.removeClass('question2');
+        $questionText.addClass('question5');
+    } else if ($questionText.hasClass('question3 false')) {
+        $answerContainer.first().children().html(`test7`);
+        $answerContainer.last().children().html(`test8`);
+        $questionText.removeClass('question2');
+        $questionText.addClass('question5');
+    }
+    
+    // else if ($questionText.hasClass('question1') ) {
+    //     $answerContainer.first().children().html(`test1`);
+    //     $answerContainer.last().children().html(`test2`);
+    //     $questionText.removeClass('question1');
+    //     $questionText.addClass('question2');
+    // } 
+
+
+})
+
+$input.on('click', () => {
+    $questionText.removeClass('true false')
+    questionOneAnswer = $('input[type=radio]:checked').val()
+    console.log(questionOneAnswer)
+    $questionText.addClass(questionOneAnswer)
+
+});
+
+
+// dogApp.submitClick();
 //store dog breed based on "answer" within variable
 
 const dogOptions = [
