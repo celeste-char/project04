@@ -1,0 +1,34 @@
+.questionPage {
+    width: 100%;
+    display: none;
+    main {
+        height: 100%;
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        height: 100%;
+        width: 100%;
+    }
+    input[type="radio"] {
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        height: 100%;
+        padding: 100%;
+    }
+
+
+
+    p {
+        text-align: center;
+    }
+}
+
+.answerContainer {
+    width: 100%;
+    height: 100%;
+}
