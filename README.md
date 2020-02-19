@@ -21,3 +21,4 @@ if not big: return false
 if hair question returns true --> go to or append question shelf
 if false --> go to or append question friday
 
+Hello there! - Joey
