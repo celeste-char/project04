@@ -493,6 +493,15 @@ section {
   text-align: center;
 }
 
+.resultsPage {
+  height: 80%;
+}
+
+.resultsPage h2,
+.resultsPage p {
+  text-align: center;
+}
+
 .resultsPage main {
   display: -webkit-box;
   display: -ms-flexbox;
