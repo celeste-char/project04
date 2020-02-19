@@ -12,11 +12,7 @@
 
 //VARIBLES
 
-<<<<<<< HEAD
-const $resultImg = $('.resultsPage img')
-=======
 const $resultImg = $('.resultsPage img');
->>>>>>> test-branch
 
 const $startPage = $('.startPage');
 
@@ -44,7 +40,7 @@ let questionOneAnswer;
     
 $('button').on('click', (e) => {
     e.preventDefault();
-    
+    console.log('test')
 
     if ($questionText.hasClass('startPage')) { 
         //start

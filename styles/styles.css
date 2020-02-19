@@ -475,17 +475,6 @@ section {
   padding: 100%;
 }
 
-<<<<<<< HEAD
-.resultsPage {
-  height: 80%;
-}
-
-.resultsPage h2,
-.resultsPage p {
-  text-align: center;
-}
-
-=======
 .questionPage p {
   text-align: center;
 }
@@ -504,7 +493,6 @@ section {
   text-align: center;
 }
 
->>>>>>> test-branch
 .resultsPage main {
   display: -webkit-box;
   display: -ms-flexbox;
