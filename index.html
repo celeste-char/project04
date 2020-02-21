@@ -21,7 +21,7 @@
         
             <main>
                 <div class="wrapper">
-                    <p>Description of game. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident eos saepe esse similique quidem consequuntur excepturi, magni nisi corrupti at nulla iusto minima architecto officiis, explicabo magnam in sint?</p>
+                    <p>Doges are life. Doges are good bois. Which one are you? Click/tap to select your answer, then submit to find out!</p>
                 </div>
                 <div class="galleryContainer">
                     <div class="imgContainer">
@@ -38,35 +38,34 @@
     
             <main>
                 <div class="questionContainer">
-                    <p class="startPage">Would you consider yourself a...</p>
+                    <p id="question" class="question">Would you consider yourself a...</p>
                 </div>
     
-                <form class="optionContainer">
-                        <div class="imgContainer">
-                            <img src="" alt="">
-                        </div>
-                        <div class="answerContainer">
-                            <input type="radio" name="true" value="true">
+                <form class="optionContainer" id="form">
+                    <div class="answerContainer">
+                            <div class="imgContainer">
+                                <img id="img1" src="./assets/icon-doges/chihuahua.png" alt="a happy chihuahua">
+                            </div>
+                            <input type="radio" name="question" value="true" id="true">
                             <label for="true">morning person</label>
-                            <!-- <p></p> -->
                         </div>
     
-                        <div>
+                        <div class="h2Container">
                             <h2>or</h2>
                         </div>
         
-                        <div class="imgContainer">
-                            <img src="" alt="">
-                        </div>
                         <div class="answerContainer">
-                            <input type="radio" name="false" value="false">
+                            <div class="imgContainer">
+                                <img id="img2" src="./assets/icon-doges/great-dane.png" alt="">
+                                <!-- <img id="garbage" src="./assets/icon-doges/old-english-sheepdog.png" alt=""> -->
+                            </div>
+                            <input type="radio" name="question" value="false" id="false">
                             <label for="false">not a morning person</label>
-                            <!-- <p>not a morning person</p> -->
                         </div>
 
                 </form>
             </main>
-            <button>Next!</button>
+            <button id="next">Next!</button>
         </div>
     </section>
 
@@ -82,6 +81,7 @@
             </main>
         </div>
     </section> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./scripts/scripts.js">
     
     </script>

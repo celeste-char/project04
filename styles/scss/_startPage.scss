@@ -2,9 +2,12 @@ body {
     background-color: $primaryColor;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     height: 100vh;
     min-height: 700px;
+    @include tablet {
+        align-items: unset;
+    }
 }
 
 section {
@@ -17,7 +20,11 @@ section {
     padding: 3% 0;
     background-color: $offWhite;
     border: solid 10px $accentColor;
-    max-width: 90%;
+    border-radius: 5px;
+    min-width: 90%;
+    @include tablet {
+        margin: 4% 5%;
+    }
 }
 
 .wrapper {
@@ -37,7 +44,7 @@ section {
         display: flex;
         flex-direction: column;
         min-height: 90%;
-        max-width: 100%;
+        min-width: 100%;
         .wrapper {
             height: unset;
         }
@@ -53,6 +60,10 @@ section {
         padding-bottom: 2%;
         position: relative;
         overflow: hidden;
+        padding-bottom: 5%;
+        @include smTablet {
+            display: none;
+        }
     }
 
     .imgContainer {
@@ -66,6 +77,7 @@ section {
         transform: translate3d(0,0,0);
         background-image: url(../assets/dogs.png);
         background-size: cover;
+        background-position: center;
         animation: slideshow 25s linear infinite;
     }
 

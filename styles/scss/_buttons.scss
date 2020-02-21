@@ -4,6 +4,9 @@ button {
     color: $white;
     position: absolute;
     bottom: 6%;
+    transition: background-color .25s, color .25s;
+    border: hidden;
+    border-radius: 5px;
 
     &:hover,
     &:focus-within {
