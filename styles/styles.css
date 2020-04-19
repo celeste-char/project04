@@ -334,6 +334,7 @@ button {
   transition: background-color .25s, color .25s;
   border: hidden;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover, button:focus-within {
