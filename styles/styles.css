@@ -259,6 +259,10 @@ button {
   display: block;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   font-size: 62.5%;
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -596,7 +600,9 @@ section {
 
 .resultsPage {
   display: none;
-  height: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .resultsPage h2,
